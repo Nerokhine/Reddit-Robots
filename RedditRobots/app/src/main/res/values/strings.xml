@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Reddit Robots</string>
+    <string name="basic_matching_hint">Enter text to match</string>
+    <string name="advanced_matching_hint">Enter regex to use</string>
+    <string name="comment_hint">Enter reply to matched comment</string>
+    <string name="subreddit_hint">Enter subreddit name</string>
+    <string name="button_add">add</string>
+    <string name="regex_check_box">Enable Regex</string>
+    <string name="reply_check_box">Enable Reply</string>
+    <string name="match">Match:</string>
+    <string name="reply">Reply:</string>
+    <string name="subreddit">Subreddits:</string>
+    <string name="thread">Comment Thread:</string>
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_material_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:clickable="true"
+        android:textColor="@color/primary_material_light"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity=""
+        android:textSize="25dp"
+        android:background="@color/accent_material_light"
+        android:text="@string/match"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:background="@color/primary_material_light"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/edit_match"
+            android:layout_height="match_parent"
+            android:hint="@string/basic_matching_hint"
+            android:layout_weight="3"
+            android:gravity="top"
+            android:layout_width="0dp" />
+
+        <CheckBox
+            android:id="@+id/regex_check_box"
+            android:gravity="top"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/regex_check_box"
+            android:onClick="activateRegex"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reply_text"
+        android:textColor="@color/primary_dark_material_light"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity=""
+        android:textSize="25dp"
+        android:background="@color/accent_material_light"
+        android:text="@string/reply"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:background="@color/primary_material_light"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/edit_reply"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:hint="@string/comment_hint"
+            android:layout_weight="3"
+            android:gravity="top"
+            android:layout_width="0dp" />
+        <CheckBox
+            android:id="@+id/reply_check_box"
+            android:gravity="top"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/reply_check_box"
+            android:onClick="activateReply"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:clickable="true"
+        android:textColor="@color/primary_material_light"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity=""
+        android:textSize="25dp"
+        android:text="@string/subreddit"
+        android:background="@color/accent_material_light"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:background="@color/primary_material_light"
+            android:id="@+id/edit_subreddit"
+            android:layout_height="match_parent"
+            android:hint="@string/subreddit_hint"
+            android:gravity="top"
+            android:layout_weight="3"
+            android:layout_width="0dp" />
+        <TextView
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:background="@color/primary_dark_material_light"
+        android:textColor="@color/primary_material_light"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add"
+        android:onClick="addAction"
+        android:layout_gravity="center"
+        android:layout_width="100dp" />
+
+</LinearLayout>
+
